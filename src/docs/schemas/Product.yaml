@@ -1,0 +1,22 @@
+components:
+  schemas:
+      Product:
+          type: object
+          properties:
+              title:
+                  type: string
+                  description: The product's name
+              description:
+                  type: string
+                  description: The description of the product
+              price:
+                  type: integer
+                  description: The product's price
+          required:
+              - title
+              - description
+              - price
+          example:
+              title: "Laptop"
+              description: "A gamer laptop"
+              price: 1900
